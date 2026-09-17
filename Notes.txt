@@ -1,0 +1,10 @@
+PROBLEMS HAVE TO SOLVE:
+
+Sum of a each digit in a given number
+Sum of even digits
+Sum of odd digits
+
+
+
+
+
