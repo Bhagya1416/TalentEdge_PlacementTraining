@@ -1,8 +1,83 @@
 PROBLEMS HAVE TO SOLVE:
-
 Sum of a each digit in a given number
 Sum of even digits
 Sum of odd digits
+
+
+#22-09-2026
+DICTIONARIES:
+Dictionary is the poweful data structure
+Denoted by {(Key,value)}
+ex: d{1:1,2:4,3:9}
+d[key]=value
+d[2]=4
+d[3]=9
+d[4]=error
+d.get(2)  output: 4
+d.pop(3)  output: 9 #Now the d becomes {1:1,2:4} because we pop the key 3
+
+d[4]=16
+print(d)
+output: {1:1,2:4,3:9,4:16}
+
+d[5]=25
+print(d)
+output: {1:1,2:4,3:9,4:16,5:25}
+
+input for all below examples: {1:1,2:4,3:9}
+d.keys()
+output: dict_keys([1,2,3])
+
+d.items()
+output: dict_values([1,4,9])
+
+d.items()
+output: dict_items([(1,1),(2,4),(3,9)])
+
+To update
+d[2]=20
+output: {1:1,2:20,3:9}
+
+d[3]=d[3]+22
+output: {1:1,2:4,3:31}
+
+About 'setdefault' built in method
+d.setdefault(3,9)
+output: 31
+
+d.setdefault(5,25)
+output: {1:1,2:4,3:9,5:25}
+
+d.setdefault(6)
+output: {1:1,2:4,3:9,6:None}
+
+d[2]=d.setdefault(2)+5
+output: {1:1,2:9,3:9}
+
+d[6]=d.setdefault('a',2)+5  #we denote a in '' because it is constant
+input: {1:1,2:4,3:9,6:None}
+output: {1:1,2:4,3:9,6:7,'a':2}
+
+if we want to get 'a':3, the logic is below: #to fins the frequency we use this logic
+d['a']=d.setdefault('a',0)+1  
+output: {1:1,2:4,3:9,6:7,'a':3}
+
+
+d.popitem()  #It removes the last key and value
+input: {1:1,2:4}
+run: d.popitem()
+output: {1:1}
+again run: d.popitem()
+output: (1,1)
+again run: d.popitem()
+output: error
+
+
+
+
+
+
+
 
 
 
